@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Search</title>
+</head>
+
+<style>
+    header{
+        width: 100%;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(66, 62, 62);
+        
+    }
+    form{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #search{
+        border: none;
+        outline: none;
+        width: 50%;
+        height: 40px;
+    }
+    .btn{
+        width: 70px;
+        height: 40px;
+        font-size: 15px;
+        margin-left: 0px;
+        background-color: black;
+        color: white;
+    }
+    .products{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+        height: 300px;
+        padding: 10px;
+        margin: auto auto;
+    }
+    .pro{
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        border-radius: 20px;
+        text-align: center;
+    }
+    .idi{
+        width: 150px;
+        height: 50px;
+        text-align: center;
+        margin: auto auto;
+    }
+
+</style>
+
+<body>
+    <header>
+        <form method="get" action="/form/">
+        <input type="search" id="search" name="search">
+        <button class="btn">
+            search
+        </button>
+    </form>
+    </header>
+<aside class="products">

@@ -1,6 +1,166 @@
+body{
+    margin: 0px;
+}
 #head{
     width: 100%;
-    height: 70px;
-    background: rgb(70, 68, 68);
     position: fixed;
+    overflow: hidden;
+    box-sizing: border-box;
+    max-width: 100%;
+    background-color: #fff;
+    height: 100px;
+    z-index: 200;
 }
+.navagation{
+   width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    background-color: #fff;
+    
+}
+.logo{
+    display: flex;
+    width: 100px;
+    height: 90px;
+    background-image: url(images/cartlogo.jpg);
+    background-size: 100% 100%;
+    margin-left: 30px;
+    border-radius: 50px;
+}
+.pilink{
+    width: 60%;
+    height: 90px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+.pilink a {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+     'Helvetica Neue', sans-serif;
+     font-weight: 500;
+     color: black;
+     text-decoration: none;
+     transition: .3s;
+}
+.pilink a:hover{
+    color: goldenrod;
+}
+.sect1{
+    margin-top: 100px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 450px;
+    max-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.hero-txt{
+    width: 50%;
+    height: 450px;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: linear-gradient(
+        60deg,
+        black,
+        rgb(112, 106, 106),
+        #fff
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: bgcolor 5s 1s infinite forwards linear;
+    transition: .6s all ease-in-out;
+}
+@keyframes bgcolor {
+    0% {
+        background: linear-gradient(
+            60deg,
+            black,
+            rgb(112, 106, 106),
+            #fff 
+        );
+    }
+    50% {
+        background: linear-gradient(
+            100deg,
+            black,
+            rgb(112, 106, 106),
+            #fff 
+        );
+    }
+    100%{
+        background: linear-gradient(
+            60deg,
+            black,
+            rgb(112, 106, 106),
+            #fff 
+        );
+    }
+}
+.text{
+    font-size: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    width: 50%;
+    line-height: 40px;
+    letter-spacing: .5px;
+    color: aliceblue;
+    margin-top: 20px;
+}
+.moretext{
+    font-size: 12px;
+}
+.btn1{
+    width: 130px;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+     'Helvetica Neue', sans-serif;
+     font-weight: 500px;
+     cursor: pointer;
+     transition: .6s all;
+}
+.btn1:hover{
+    background-color: transparent;
+    border: 2px solid black;
+}
+.hero-img{
+    width: 50%;
+    height: 450px;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-image: url(images/oid.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.sect2{
+    min-width: 100%;
+    padding: 20px;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: rgb(49, 69, 87);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.img-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 70px;
+    width: 50px;
+}
+
