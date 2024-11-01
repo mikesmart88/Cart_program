@@ -147,20 +147,118 @@ body{
 .sect2{
     min-width: 100%;
     padding: 20px;
-    overflow: hidden;
     box-sizing: border-box;
-    background-color: rgb(49, 69, 87);
+    background-color: whitesmoke;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     margin-top: 30px;
 }
 .img-box{
+    overflow: hidden;
+    height: 300px;
+    width: 30%;
+    color: #fff;
+    box-sizing: border-box;
+    box-shadow: 
+    10px 20px 20px 10px rgb(89, 87, 87);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 
+    'Helvetica Neue', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    flex-direction: column;
+    border-radius: 7px;
+}
+.img-box h2{
+    color: #fff;
+}
+.hbtn{
+    width: 130px;
+    height: 40px;
+    cursor: pointer;
+    box-sizing: border-box;
+    font-size: 15px;
+    color: white;
+    background-color: black;
+    font-weight: 500;
+    border: none;
+    border-radius: 15px;
+    transition: .3s;
+
+}
+.cart-btn button{
+    width: 70px;
     height: 70px;
-    width: 50px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 35px;
+    position: fixed;
+    top: 70%;
+    left: 90%;
+    cursor: pointer;
+    transition: .3s all;
+}
+.cart-btn button:hover{
+    color: darkgoldenrod;
+}
+.hbtn:hover{
+    background-color: transparent;
+    border: 2px solid black;
+}
+.img-box:nth-child(1){
+    background-image: url(images/andir.webp);
+}
+.img-box:nth-child(2){
+    background-image: url(images/app.avif);
+}
+.img-box:nth-child(3){
+    background-image: url(images/lwi.jpg);
+}
+.prosect{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.holder{
+    background-color: aliceblue;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.phons{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.ph{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(220, 216, 209);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img{
+    max-width: 100px;
+    max-height: 100px;
+}
+.ss1{
+    width: 90%;
+    margin: auto auto;
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 
+    'Helvetica Neue', sans-serif;
+    font-weight: 500;
 }
 

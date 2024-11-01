@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>{{brand}}{{name}}</title>
+
+</head>
+<style>
+    .des{
+        width: 90%;
+        margin:auto auto;
+        font-size: 20px;
+        text-align: center;
+    }
+    .img-show{
+        width: 80%;
+        height: 500px;
+        text-align: center;
+        margin: auto auto;
+    }
+    .img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .detals{
+        display: flex;
+        align-items: center;
+    }
+    .btn-holder{
+        width: 100%;
+        text-align: center;
+    }
+    .btn-holder button{
+        width: 50%;
+        height: 50px;
+        font-size: 20px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+         Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+         color: white;
+         background-color: orange;
+         border: none;
+         border-radius: 15px;
+    }
+</style>
+<body>
+    
+
+    <aside class="des">
+    {{des}}
+</aside>
+<br>
+<br>
+<aside class="img-show">
+    <img class="img" src="{{image.url}}" alt="">
+</aside>
+<br>
+<aside class="detals">
+    <h2>Name:</h2> <h2>{{name}}</h2>
+</aside>
+<br>
+<br>
+<aside class="btn-holder">
+     <a href="/add_cart/{{code}}">
+        
+        <button>Add To Cart</button>
+     </a>
+</aside>
+
+</body>
+</html>

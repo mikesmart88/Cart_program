@@ -1,0 +1,11 @@
+.set{
+    padding-top: 100px;
+    width: 100%;
+   box-sizing: border-box;
+   overflow-x: hidden;
+   flex-wrap: wrap;
+   background-color: aliceblue;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+}

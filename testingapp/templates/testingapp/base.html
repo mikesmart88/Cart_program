@@ -5,14 +5,33 @@
 <head>
     <meta charset="UTF-8 ">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hello world</title>  
+    <link rel="icon" type="image/jpg" href="{% static 'testingapp/styles/images/cartlogo.jpg' %}">
+    <link rel="stylesheet" href="{% static 'testingapp/styles/home.css' %}">
+    <title>simple chart program</title>  
 </head>
 {% block metadata %}
 {% endblock %}
 <body>
-
+    <header id="head">
+        <nav class="navagation">
+        <a href="/">
+            <span class="logo">
+        
+            </span>
+        </a>
+        <aside class="pilink">
+        <a href="">SALES</a>
+        <a href="">LOCATION</a>
+        <a href="">ACCOUNT</a>
+        <a href="">ABOUT US</a>
+        <a href="">HELP</a>
+        <a href="">SEARCH</a>
+        </aside>
+        </nav>
+        </header>
+        <br>
+        
     
-    <aside style="display: flex; position:fixed; width:100%; height:100vh; background-color:rgb(97, 137, 97, 0.5)"></aside>
     
 </body>
 </html>
