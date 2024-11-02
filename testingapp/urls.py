@@ -10,5 +10,5 @@ urlpatterns = [
     path('basedir',v.base, name='base dir') ,
     path('phones/', v.phone, name='phones') ,
     path('buy/<user_id>', v.profile, name='product_type') ,
-    path('add_cart/<user_id>', v.top_cart, name='adding to cart')  ,
+    path('add_to_cart/', v.top_cart, name='adding to cart')  ,
 ]

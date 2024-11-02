@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,27 +46,25 @@
 </style>
 <body>
     
-
-    <aside class="des">
+<wt-tkn id="us_tkn">{% csrf_token %}</wt-tkn>
+    <aside class="des" id="dex">
     {{des}}
 </aside>
 <br>
 <br>
 <aside class="img-show">
-    <img class="img" src="{{image.url}}" alt="">
+    <img class="img" src="{{image.url}}" alt="" id="image" user_img = {{image}}>
 </aside>
 <br>
 <aside class="detals">
-    <h2>Name:</h2> <h2>{{name}}</h2>
+    <h2 >Name:</h2> <h2 id="name">{{name}}</h2>
 </aside>
 <br>
 <br>
 <aside class="btn-holder">
-     <a href="/add_cart/{{code}}">
         
-        <button>Add To Cart</button>
-     </a>
+        <button id="get_btn">Add To Cart</button>
 </aside>
-
+<script src="{% static 'testingapp/ajax/cart.js' %}"></script>
 </body>
 </html>

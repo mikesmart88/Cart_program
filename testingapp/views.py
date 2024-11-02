@@ -39,40 +39,27 @@ def profile(request, user_id):
 
     return render(request, 'testingapp/product_type.html',context=context)
 
-def top_cart(request, user_id):
+def top_cart(request):
+    try:
+        if request.method == 'POST':
+            cart_name = request.POST['name']
+            cart_dex = request.POST['describ']
+            cart_image = request.FILES['image']
 
-    path = phones.objects.get(verification_code__exact=user_id)
+            pin = cart.objects.create(
+                Name = cart_name,
+                description = cart_dex,
+                image = cart_image
+            )
 
-    if path:
+            pin.save()
 
-         context ={
-        'name':path.Name,
-        'user_id':path.verification_code
-    }
+            return(jr({'S': 'new cart have been added'}, safe=False))
+        else:
+            return(jr({'W': 'sorry, only post request'}, safe=False))
+        
+    except BaseException as e:
+        print(e)  
+        return(jr({'E': 'sorry, something when wrong'}, safe=False))
 
-    check = cart.objects.create(
-        Name = path.Name,
-        description = path.description,
-        brand = path.brand,
-        price = path.price,
-        image = path.image,
-        color = path.color,
-        currency = path.currency,
-        operating_systerm = path.operating_systerm,
-        Ram = path.Ram,
-        memory = path.memory,
-        cart_id = rand_string_generator(10),
-        screen = path.screen,
-        cellular_tech = path.cellular_tech,
-        resolution = path.resolution,
-        connectivity = path.connectivity,
-        pro_request = path.pro_request,
-        post_date = True
-    )
 
-    path.is_chart = True
-    check.save()
-
-    
-
-    return redirect('/')
